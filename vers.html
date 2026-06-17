@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vers és Kód</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilus.css">
+    <base target="_blank"> 
+</head>
+<body class="alap-hater">
+
+    <nav class="navbar navbar-expand-lg fix-fejlec">
+        <div class="container">
+            <a class="navbar-brand logo-szoveg" href="index.html" target="_self">🌐 FULABV Portál</a>
+            <div class="collapse navbar-collapse show">
+                <ul class="navbar-nav ms-auto flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link aktiv-oldal" href="vers.html" target="_self">Vers & Kód</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sport.html" target="_self">Sport & Táblázat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kirandulas.html" target="_self">Kirándulás & Tech</a></li>
+                    <li class="nav-item"><a class="nav-link" href="urlap.html" target="_self">Jelentkezés</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5 mb-5">
+        
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="cim-allura szoveg-kozep">Anyám tyúkja (újratöltve)</h1>
+                
+                <!-- KÉP KÖRBEFUTTATÁSA (A kiválasztott stabil Unsplash kép megfelelően méretezve) -->
+                <img src="https://images.unsplash.com/photo-1723546975429-b991be87c443?auto=format&fit=crop&w=300&q=80" alt="Tyúkanyó a kertben" class="kep-korbefutas" width="300">
+                
+                <p>Ej mi a kő! tyúkanyó, kend<br>
+                A szobában lakik itt bent?<br>
+                Lám, csak jó az isten, jót ád,<br>
+                Hogy fölvitte a kend dolgát!<sup>1</sup></p>
+
+                <!-- IDÉZET (Blockquote) -->
+                <blockquote class="idezet-doboz">
+                    <p>„Kiváló emberekhez valóban nem méltó, hogy <mark class="kiemeles">rabszolga módra órákat vesztegessenek el</mark> olyan számítások elvégzésével, amelyeket bárkire nyugodtan rá lehetne bízni, ha gépet használna.”</p>
+                    <footer>— Gottfried Wilhelm Leibniz</footer>
+                </blockquote>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="mt-4">Egy kis programkód az élethez</h3>
+                <pre class="kod-doboz"><code>
+// Ha az élet szép, a fizika csodálatos
+if (life === "szép") {
+    let physics = "csodálatos";
+    console.log(physics);
+} else {
+    hike("Zebegény");
+}
+                </code></pre>
+            </div>
+        </div>
+
+        <hr class="mt-5">
+        <h4 class="hivatkozas-cim">Forrásjegyzék</h4>
+        <ol class="forras-lista">
+            <li>PETŐFI, Sándor. <em>Anyám tyúkja</em>. Vác, 1848. február. Elérhető a weben: <a href="https://mek.oszk.hu">Magyar Elektronikus Könyvtár</a>.</li>
+        </ol>
+
+    </main>
+
+    <footer class="lablec text-center">
+        <p>&copy; 2026 FULABV</p>
+    </footer>
+</body>
+</html>

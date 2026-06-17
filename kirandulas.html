@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirándulás és Technika</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilus.css">
+    <base target="_blank">
+</head>
+<body class="alap-hater">
+
+    <nav class="navbar navbar-expand-lg fix-fejlec">
+        <div class="container">
+            <a class="navbar-brand logo-szoveg" href="index.html" target="_self">🌐 FULABV Portál</a>
+            <div class="collapse navbar-collapse show">
+                <ul class="navbar-nav ms-auto flex-row gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html" target="_self">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vers.html" target="_self">Vers & Kód</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sport.html" target="_self">Sport & Táblázat</a></li>
+                    <li class="nav-item"><a class="nav-link aktiv-oldal" href="kirandulas.html" target="_self">Kirándulás & Tech</a></li>
+                    <li class="nav-item"><a class="nav-link" href="urlap.html" target="_self">Jelentkezés</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5 mb-5">
+        
+        <h2>Irány a Börzsöny! (És egy kis Bluetooth)</h2>
+        <p>Indulás: reggel 7<sup>00</sup>-kor a parkolóból. Csatlakozz Bluetooth-on a hangszóróhoz!</p>
+
+        <div class="text-center mb-5 mt-4">
+            <a href="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200" title="Kattints a nagyításért!">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" alt="Hegyvidék" class="linkelt-kep">
+            </a>
+        </div>
+
+        <div class="doboz-alap blokk-elem">
+            Ez egy <strong>display: block</strong> elem. Teljes szélességet foglal el.
+        </div>
+        
+        <div class="text-center mb-4">
+            <div class="doboz-alap sor-blokk-elem">
+                Ez egy <strong>display: inline-block</strong>.
+            </div>
+            <div class="doboz-alap sor-blokk-elem">
+                Egymás mellé férnek.
+            </div>
+            <span class="sor-elem">Ez pedig egy <strong>display: inline</strong> elem.</span>
+        </div>
+
+        <div class="zold-elrejto-doboz">
+            <h3>Magamról (Csak nagy képernyőn)</h3>
+            <p>Ez a zöld blokk mobilnézetben (600px alatt) teljesen eltűnik a CSS @media szabály miatt!</p>
+        </div>
+
+    </main>
+
+    <footer class="lablec text-center">
+        <p>&copy; 2026 FULABV</p>
+    </footer>
+</body>
+</html>

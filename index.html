@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="FULABV">
+    <title>Mestermű - Főoldal</title>
+    
+    <!-- Bootstrap beágyazása (reszponzív rácsrendszer és alap komponensek) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Betűtípusok beágyazása -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Spectral:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Saját külső stíluslap (mindig a Bootstrap UTÁN, hogy felülírhassuk) -->
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+
+    <!-- FIX POZÍCIONÁLÁSÚ FEJLÉC (Görgéskor is a képernyő tetején marad - Minden oldalon egységesen frissítve) -->
+    <nav class="navbar navbar-expand-lg fix-fejlec">
+        <div class="container">
+            <a class="navbar-brand logo-szoveg" href="index.html" target="_self">🌐 FULABV Portál</a>
+            <!-- Bootstrap mobil menü gomb -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#fomenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="fomenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link aktiv-oldal" href="index.html" target="_self">Főoldal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="vers.html" target="_self">Vers & Kód</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sport.html" target="_self">Sport & Táblázat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kirandulas.html" target="_self">Kirándulás & Tech</a></li>
+                    <li class="nav-item"><a class="nav-link" href="urlap.html" target="_self">Jelentkezés</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO IMAGE (Látványos, teljes szélességű fejléckép sötétítéssel) -->
+    <header class="hosi-szekcio d-flex align-items-center justify-content-center">
+        <div class="hosi-tartalom text-center">
+            <h1>A Nagy Webfejlesztő Összegzés</h1>
+            <p>Minden technika, amit eddig tanultunk, egyetlen reszponzív mesterműben!</p>
+            <a href="urlap.html" target="_self" class="gomb-elsodleges">Regisztrálj most!</a>
+        </div>
+    </header>
+
+    <main class="container mt-5 mb-5">
+        
+        <!-- BOOTSTRAP HASÁBOK (Grid rendszer - 3 oszlop asztalon, 1 mobilon) -->
+        <section class="row mb-5 text-center">
+            <div class="col-md-4 mb-4">
+                <div class="kartyas-doboz">
+                    <h3>🎨 CSS Varázslat</h3>
+                    <p>Külső stíluslap, Google Fontok (Allura és Spectral), és modern színpaletta.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="kartyas-doboz">
+                    <h3>📱 Reszponzivitás</h3>
+                    <p>Bootstrap és egyedi @media query-k biztosítják, hogy mobilon is szép legyen.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="kartyas-doboz">
+                    <h3>📋 Dinamikus Űrlap</h3>
+                    <p>Adatbeviteli mezők, választógombok és reszponzív elrendezés a Jelentkezés oldalon.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS HASÁBOK (column-count használata folyószövegnél) -->
+        <section class="szoveges-hasabok mb-5">
+            <h2 class="cim-allura text-center">Klasszikus Szöveges Hasábok</h2>
+            <div class="hasabos-tartalom">
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+                <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LÁBLÉC -->
+    <footer class="lablec text-center">
+        <div class="container">
+            <p>&copy; 2026 FULABV - Minden jog fenntartva (kivéve a tyúkot, az a Petőfié).</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (a mobil menü lenyitásához kell) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
